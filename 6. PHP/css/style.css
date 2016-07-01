@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.container-fluid {
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background.jpg);
+  	background-position: center;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	height: 100vh;
+}
+
+.myContainer {
+	width: 90%;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+	font-size: 250%;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+input {
+	max-width: 500px;
+	margin: 20px auto 20px auto;
+	text-align: center;
+}
+
+.alertSuccess {
+	max-width: 500px;
+	margin: 0 auto 20px auto;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.alertFail {
+	max-width: 500px;
+	margin: 0 auto 20px auto;
+	padding: 10px;
+	background-color: rgba(200, 0, 0, 0.5);
+	display: none;
+}
+
+.loader {
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	background: url('../img/page-loader.gif') no-repeat rgba(0,0,0,0.2);
+	background-position: 50% 55%;
+	background-size: 30px 30px;
+}
